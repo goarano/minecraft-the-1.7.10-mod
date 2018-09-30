@@ -1,4 +1,5 @@
 FROM java:8-jre-alpine
+MAINTAINER Jan <goarano@gmail.com>
 
 WORKDIR /data
 RUN apk update && apk add unzip curl

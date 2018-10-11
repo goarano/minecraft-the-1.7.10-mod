@@ -1,6 +1,10 @@
 # minecraft-the-1.7.10-mod
 Minecraft server running the 1.7.10 mod
 
+## Ports
+
+Minecraft: 25565
+Dynmap: 8123
 
 ## Example
 
@@ -18,6 +22,7 @@ services:
       - EULA_AGREE=true
     ports:
       - "25565:25565"
+      - "8123:8123"
     volumes:
       - tekkit-1710-mod-game1:/app
       - /srv/tekkit/1.7.10-mod/game1/server.properties:/app/server.properties

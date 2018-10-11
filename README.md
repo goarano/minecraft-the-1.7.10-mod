@@ -9,11 +9,13 @@ version: '2'
 
 services:
   mc-1710-mod:
-    build: .
+    image: goarano/minecraft-the-1.7.10-mod
     container_name: 'mc-1710-mod'
     restart: always
     tty: true
     stdin_open: true
+    environment:
+      - EULA_AGREE=true
     ports:
       - "25565:25565"
     volumes:

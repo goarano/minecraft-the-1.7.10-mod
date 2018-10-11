@@ -2,7 +2,7 @@ FROM java:8-jre-alpine
 MAINTAINER Jan <goarano@gmail.com>
 
 WORKDIR /data
-RUN apk update && apk add unzip curl
+RUN apk update && apk add --no-cache unzip curl rsync
 
 ENV MOD_VERSION 0.9.8
 

@@ -12,7 +12,7 @@ fi
 
 if [ ! -f LaunchServer.sh ]; then
     echo "copying server files..."
-    cp -a /data/* /app 2> /dev/null
+    rsync -r --ignore-existing /data/* /app
 fi
 
 echo "starting server"
